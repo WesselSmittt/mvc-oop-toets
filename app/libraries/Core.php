@@ -16,14 +16,14 @@
             unset($url[0]);
             // var_dump($url);
         }
-        // We sluiten het klasse-bestand in. 
+        
         require_once '../app/controllers/'. $this->currentController . '.php';
 
         // We maken een nieuw object van de controller klasse
         $this->currentController = new $this->currentController();
 
 
-        // We gaan kijken naar het tweede gedeelte van het array $url
+        
         if (isset($url[1])) {
             if (method_exists($this->currentController, $url[1])) {
                 $this->currentMethod = $url[1];
