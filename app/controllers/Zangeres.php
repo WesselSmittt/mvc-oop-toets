@@ -36,7 +36,7 @@ class Zangeres extends BaseController
         }
 
         $data = [
-            'title' => 'Overzicht zangeressen',
+            'title' => 'Top 5 rijkste zangeressen ter wereld',
             'tableRows' => $tableRows
         ];
 
