@@ -11,7 +11,6 @@
 
     <table border='1'>
         <thead>
-            <th>Id</th>
             <th>Naam</th>
             <th>Netto Waarde</th>
             <th>Land</th>

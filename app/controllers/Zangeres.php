@@ -26,8 +26,8 @@ class Zangeres extends BaseController
         $tableRows = "";
         foreach ($zangeres as $value) {
             $tableRows .= "<tr>
-                                <td>$value->Id</td>
-                                <td>$value->Name</td>
+                                
+                                <td>$value->Naam</td>
                                 <td>$value->NettoWaarde</td>
                                 <td>$value->Land</td>
                                 <td>$value->Mobiel</td>
