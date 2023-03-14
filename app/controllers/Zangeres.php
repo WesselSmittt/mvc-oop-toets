@@ -19,7 +19,7 @@ class Zangeres extends BaseController
     }
 
 
-    public function getZangeres($id1=NULL, $id2=NULL, $id3=NULL, $id4=NULL, $id5=NULL, $id6=NULL) 
+    public function getZangeres() 
     {
         $zangeres = $this->zangeresModel->getZangeres();
 
