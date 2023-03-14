@@ -1,12 +1,12 @@
 <?php
 
-class Country extends BaseController
+class Zangeres extends BaseController
 {
-    private $countryModel;
+    private $zangeresModel;
 
     public function __construct()
     {
-        $this->countryModel = $this->model('CountryModel');
+        $this->zangeresModel = $this->model('ZangeresModel');
     }
 
     public function index()
@@ -15,13 +15,13 @@ class Country extends BaseController
             'title' => 'Overzicht landen van de wereld'
         ];
 
-        $this->view('country/index', $data);
+        $this->view('zangeres/index', $data);
     }
 
 
     public function getCountries($id1=NULL, $id2=NULL) 
     {
-        $countries = $this->countryModel->getCountries();
+        $countries = $this->zangeresModel->getCountries();
 
         $tableRows = "";
         foreach ($countries as $value) {
@@ -36,6 +36,6 @@ class Country extends BaseController
             'tableRows' => $tableRows
         ];
 
-        $this->view('country/getCountries', $data);
+        $this->view('zangeres/getCountries', $data);
     }
 }
